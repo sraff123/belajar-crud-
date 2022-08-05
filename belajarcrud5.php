@@ -23,12 +23,8 @@
 
 
     <?php
-    $servername = "localhost";
-    $database   = "root";
-    $username   = "";
-    $password   = "db_perpusweb"; 
-
-    $connect = mysqli_connect($servername,$database,$username,$password);
+    
+    include 'koneksi.php';
 
     $no =1 ;
     $data = mysqli_query($connect, "select * from anggota ") ;
